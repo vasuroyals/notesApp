@@ -1,0 +1,61 @@
+.note-list {
+    display: flex;
+    flex-wrap: wrap;  /* Allow wrapping to the next row */
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.note {
+    padding: 20px;
+    background-color: rgba(128, 128, 128, 0.333); /* White background for notes */
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 30%;  /* 3 notes per row */
+    box-shadow: 0 2px 8px rgb(233, 184, 8);
+    transition: transform 0.3s ease;
+    border: 2px solid gray;
+}
+
+.note:hover {
+    transform: translateY(-5px);  /* Lift the note on hover */
+}
+
+.note h3 {
+    margin-top: 0;
+    font-size: 18px;
+    color:green;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.note p {
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.note button {
+    margin-top: 10px;
+    padding: 8px;
+    margin-right: 6px;
+    background-color: #f436a8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.note button:hover {
+    background-color: #2f37d3;
+    box-shadow: 3px 3px 33px blue;
+}
+@media (max-width: 768px) {
+    .note {
+        width: 45%;  /* 2 notes per row on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .note {
+        width: 100%;  /* 1 note per row on small screens */
+    }
+}

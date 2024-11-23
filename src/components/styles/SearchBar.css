@@ -1,0 +1,25 @@
+.search-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    background-color: #8bef10; /* Light background for search bar */
+    padding: 10px;
+    border-radius: 8px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 0 4px 18px rgba(206, 156, 28, 0.977);
+
+}
+
+.search-bar input,
+.search-bar select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-bar label {
+    font-size: 16px;
+    font-weight: bold;
+}

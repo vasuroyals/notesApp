@@ -1,0 +1,41 @@
+.note-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: orange; 
+    padding: 20px;
+    border-radius: 8px;
+   
+}
+.note-form:hover{
+    box-shadow: 0 4px 18px black;
+}
+
+.note-form input,
+.note-form textarea,
+.note-form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.note-form button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.note-form button:hover {
+    background-color:green;
+    box-shadow: 3px 3px 33px rgb(64, 255, 0);
+}
+h2{
+    font-family: "Roboto";
+    font-size: 22px;
+}
